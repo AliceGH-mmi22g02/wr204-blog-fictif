@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog culture du numérique</title>
   </head>
   <body>
@@ -7,8 +10,8 @@
     <!-- Menu -->
     <nav>
       <div>
-        <a href="#"><img src="images/logo.png"></a>
-        <button>
+        <a href="#"><img src="images/logo.png" alt="Logo"></a>
+        <button aria-label="Menu">
           <span></span>
         </button>
         <div>
@@ -17,13 +20,13 @@
               <a href="#">Accueil</a>
             </li>
             <li> <!-- https://www.w3schools.com/howto/howto_js_collapsible.asp -->
-              <a href="#" >
-                Articles
-              </a>
-              <ul>
-                <li><a href="#">Le numérique nous rend-il plus intelligent ?</a></li>
+              <button class="collapsible">Articles</button>
+              <ul class="collapsible-content">
                 <li><a href="#">Le numérique permet-il de réduire nos impacts environnementaux ?</a></li>
-                <li><a href="#">...</a></li>
+                <li><a href="#">Le télétravail, une solution écologique ?</a></li>
+                <li><a href="#">La dématérialisation : quel impact environnemental ?</a></li>
+                <li><a href="#">Le E-commerce et l'environnement : des impacts contrastés</a></li>
+                <li><a href="#">Les déchets électroniques : un enjeu majeur pour notre environnement numérique</a></li>
               </ul>
             </li>
             <li>
@@ -41,97 +44,54 @@
       </header>
 
       <!-- Articles -->
-     <div>
+      <div>
         <img src="images/article_1.png" alt="description de la photo">
         <div>
-          <h5>Le numérique nous rend-il plus intelligent ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
+          <h5>Le numérique permet-il de réduire nos impacts environnementaux ?</h5>
+          <p>Le numérique est souvent présenté comme une solution pour réduire notre impact environnemental. En effet, le télétravail, la dématérialisation des documents et la consommation de biens et services en ligne permettent de réduire les émissions de gaz à effet de serre (GES), la consommation d'énergie et l'épuisement des ressources non-renouvelables. Cependant, ces avantages environnementaux sont-ils réels et ne sont-ils pas compensés par des impacts négatifs indirects ?</p>
+          <a href="article1.html">Voir l'article complet</a>
+        </div>
+      </div>
+
+     <div>
+        <img src="images/article_2.png" alt="description de la photo">
+        <div>
+          <h5>Le télétravail, une solution écologique ?</h5>
+          <p>Le télétravail est devenu une solution de plus en plus adoptée ces dernières années, surtout depuis l'émergence de la pandémie de Covid-19. Cette pratique présente des avantages économiques et organisationnels, mais elle est également bénéfique pour l'environnement.</p>
+          <a href="article2.html">Voir l'article complet</a>
         </div>
       </div>
 
       <div>
-        <img src="images/article_2.png" alt="description de la photo">
-        <div>
-          <h5>Le numérique permet-il de réduire nos impacts environnementaux ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
-        </div>
-      </div>      
-     <div>
         <img src="images/article_3.png" alt="description de la photo">
         <div>
-          <h5>Le numérique nous rend-il plus intelligent ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
+          <h5>La dématérialisation : quel impact environnemental ?</h5>
+          <p>Avec l’avancée de la technologie, la dématérialisation est devenue une pratique courante pour de nombreuses entreprises. Cette pratique permet de transférer des informations et des documents papier sous une forme numérique. Mais quels sont les impacts environnementaux de cette pratique ?</p>
+          <a href="article3.html">Voir l'article complet</a>
         </div>
       </div>
-
       <div>
         <img src="images/article_4.png" alt="description de la photo">
         <div>
-          <h5>Le numérique permet-il de réduire nos impacts environnementaux ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
+          <h5>Le E-commerce et l'environnement : des impacts contrastés</h5>
+          <p>Le commerce électronique, plus communément appelé E-commerce, est de plus en plus présent dans notre vie quotidienne. Les avantages du E-commerce sont nombreux : gain de temps, accès à une plus grande variété de produits, comparaison facile des prix, etc. Cependant, quel est l'impact environnemental de cette pratique de consommation ?</p>
+          <a href="article4.html">Voir l'article complet</a>
         </div>
-      </div>      
-     <div>
+      </div>
+      <div>
         <img src="images/article_5.png" alt="description de la photo">
         <div>
-          <h5>Le numérique nous rend-il plus intelligent ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
+          <h5>Les déchets électroniques : un enjeu majeur pour notre environnement numérique</h5>
+          <p>Les déchets électroniques, ou DEEE, sont une source majeure de pollution dans notre monde numérique. L'extraction des matières premières nécessaires à la fabrication des appareils électroniques est polluante et contaminante pour les nappes phréatiques, tandis que les techniques de traitement des déchets électroniques en fin de vie génèrent des fumées toxiques qui polluent les sols et l'air.</p>
+          <a href="article5.html">Voir l'article complet</a>
         </div>
       </div>
 
-      <div>
-        <img src="images/article_6.png" alt="description de la photo">
-        <div>
-          <h5>Le numérique permet-il de réduire nos impacts environnementaux ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
-        </div>
-      </div>      
-     <div>
-        <img src="images/article_7.png" alt="description de la photo">
-        <div>
-          <h5>Le numérique nous rend-il plus intelligent ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
-        </div>
-      </div>
-
-      <div>
-        <img src="images/article_8.png" alt="description de la photo">
-        <div>
-          <h5>Le numérique permet-il de réduire nos impacts environnementaux ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
-        </div>
-      </div>      
-     <div>
-        <img src="images/article_1.png" alt="description de la photo">
-        <div>
-          <h5>Le numérique nous rend-il plus intelligent ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
-        </div>
-      </div>
-
-      <div>
-        <img src="images/article_2.png" alt="description de la photo">
-        <div>
-          <h5>Le numérique permet-il de réduire nos impacts environnementaux ?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget metus dignissim, ornare nisi sed, sollicitudin ex. Cras posuere pellentesque sem, sit amet elementum nulla congue non. Quisque a mattis ante. Praesent rutrum nisl non mi vestibulum vulputate. Nulla facilisi.</p>
-          <a href="article.html">Voir l'article complet</a>
-        </div>
-      </div>      
-
-
-    <!-- Footer -->
+  <!-- Footer -->
     <footer>
       <p>Par <span style="font-weight: bold; text-transform: uppercase;">[ vos noms + groupe(s) ]</span> - BUT MMI 2023 - Culture du numérique</p>
     </footer>
 
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
