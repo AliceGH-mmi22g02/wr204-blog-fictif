@@ -1,54 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Blog culture du numérique</title>
   </head>
   <body>
-
      <!-- Menu -->
-    <nav>
-      <div>
-        <a href="#"><img src="images/logo.png"></a>
-        <button>
-          <span></span>
-        </button>
-        <div>
-          <ul>
-            <li>
-              <a href="#">Accueil</a>
-            </li>
-            <li> <!-- https://www.w3schools.com/howto/howto_js_collapsible.asp -->
-              <a href="#" >Articles</a>
-              <ul>
-                <li><a href="article1.html">Le numérique permet-il de réduire nos impacts environnementaux ?</a></li>
-                <li><a href="article2.html">Le télétravail, une solution écologique ?</a></li>
-                <li><a href="article3.html">La dématérialisation : quel impact environnemental ?</a></li>
-                <li><a href="article4.html">Le E-commerce et l'environnement : des impacts contrastés</a></li>
-                <li><a href="article5.html">Les déchets électroniques : un enjeu majeur pour notre environnement numérique</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="technique.html">Démarche technique</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+     <nav>
+       <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo"></a>
+       <ul id="ul-container">
+         <li class="hover">
+           <a id="acceuil" href="index.html">Accueil</a>
+         </li>
+         <!-- https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+         <li>
+           <button type="button" class="hover collapsible">Articles</button>
+           <ul class="content">
+             <li><a href="article.html">Le numérique permet-il de réduire nos impacts environnementaux ?</a></li>
+             <li><a href="article2.html">Le télétravail, une solution écologique ?</a></li>
+             <li><a href="article3.html">La dématérialisation : quel impact environnemental ?</a></li>
+             <li><a href="article4.html">Le E-commerce et l'environnement : des impacts contrastés</a></li>
+             <li><a href="article5.html">Les déchets électroniques : un enjeu majeur pour notre environnement numérique</a></li>
+           </ul>
+         </li>
+         <li class="hover">
+           <a href="technique.html">Démarche technique</a>
+         </li>
+       </ul>
+     </nav>
 
-    <div*>
-      <header>
+    <div>
         <h1>La dématérialisation : quel impact environnemental ?</h1>
-      </header>
-
-      <nav>
-        <ol>
-          <li><a href="index.html">Accueil</a></li>
-          <li>Article</li>
-        </ol>
-      </nav>
-
       <!-- Articles -->
-     <div>
-      <div>
+      <div class="main">
+       <div class="article-complet">
         <div>
           <h5>💡 Introduction</h5>
           <p>Avec l’avancée de la technologie, la dématérialisation est devenue une pratique courante pour de nombreuses entreprises. Cette pratique permet de transférer des informations et des documents papier sous une forme numérique. Mais quels sont les impacts environnementaux de cette pratique ?</p>
@@ -75,19 +63,17 @@
           <br>
           <h5>📚 Sources</h5>
           <ul>
-            <li><a href="" target="_blank">Lien vers ressource</a></li>
-            <li><a href="" target="_blank">Lien vers ressource</a></li>
-            <li><a href="" target="_blank">Lien vers ressource</a></li>
-            <li><a href="" target="_blank">Lien vers ressource</a></li>
+            <li><a href="https://www.eco-conception.fr/data/sources/users/7/ademecontributiondunumeriquesynthese.pdf " target="_blank">Potentiel de contribution du numérique à la réduction des impacts environnementaux : état des lieux et enjeux pour la prospective, ADEME, 2016</a></li>
+            <li><a href="https://www.compta-online.com/ecologie-numerique-ao5847" target="_blank">L'écologie numérique : dématérialiser sans polluer - Compta-online</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-    <!-- Footer -->
+  <!-- Footer -->
     <footer>
-      <p>Par <span style="font-weight: bold; text-transform: uppercase;">[ vos noms + groupe(s) ]</span> - BUT MMI 2023 - Culture du numérique</p>
+      <p>Par <span style="font-weight: bold; text-transform: uppercase;">Maëve Basque & Alice Ghanimi - TD GH</span> - BUT MMI 2023 - Culture du numérique</p>
     </footer>
 
   </body>

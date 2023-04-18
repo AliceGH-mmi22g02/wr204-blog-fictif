@@ -1,79 +1,83 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Blog culture du numérique</title>
   </head>
   <body>
 
      <!-- Menu -->
-    <nav>
-      <div>
-        <a href="#"><img src="images/logo.png"></a>
-        <button>
-          <span></span>
-        </button>
-        <div>
-          <ul>
-            <li>
-              <a href="#">Accueil</a>
-            </li>
-            <li> <!-- https://www.w3schools.com/howto/howto_js_collapsible.asp -->
-              <a href="#" >
-                Articles
-              </a>
-              <ul>
-                <li><a href="article1.html">Le numérique permet-il de réduire nos impacts environnementaux ?</a></li>
-                <li><a href="article2.html">Le télétravail, une solution écologique ?</a></li>
-                <li><a href="article3.html">La dématérialisation : quel impact environnemental ?</a></li>
-                <li><a href="article4.html">Le E-commerce et l'environnement : des impacts contrastés</a></li>
-                <li><a href="article5.html">Les déchets électroniques : un enjeu majeur pour notre environnement numérique</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="technique.html">Démarche technique</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+     <nav>
+       <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo"></a>
+       <ul id="ul-container">
+         <li class="hover">
+           <a id="acceuil" href="index.html">Accueil</a>
+         </li>
+         <!-- https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+         <li>
+           <button type="button" class="hover collapsible">Articles</button>
+           <ul class="content">
+             <li><a href="article.html">Le numérique permet-il de réduire nos impacts environnementaux ?</a></li>
+             <li><a href="article2.html">Le télétravail, une solution écologique ?</a></li>
+             <li><a href="article3.html">La dématérialisation : quel impact environnemental ?</a></li>
+             <li><a href="article4.html">Le E-commerce et l'environnement : des impacts contrastés</a></li>
+             <li><a href="article5.html">Les déchets électroniques : un enjeu majeur pour notre environnement numérique</a></li>
+           </ul>
+         </li>
+         <li class="hover">
+           <a href="technique.html">Démarche technique</a>
+         </li>
+       </ul>
+     </nav>
 
-
-    <div class="container">
       <header class="mt-5 mb-2 p-5">
         <h1 class="bold">Démarche technique</h1>
       </header>
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Démarche technique</li>
-        </ol>
-      </nav>
-
       <!-- Articles -->
-     <div class="row">
+     <div class="main row">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">💻 Démarche technique</h5>
           <p class="card-text col-md-8">Description de la démarche technique éffectuée pour améliorer les performances du site et baisser son impact.</p>
           <br>
+          <p>La démarche technique que nous avons suivie pour améliorer les performances de notre site web et réduire son impact est la suivante :</p>
           <br>
+          <p>Nous avons utilisé plusieurs outils spécifiques pour atteindre cet objectif.</p>
+          <br>
+          <p>Tout d'abord, nous avons utilisé Iloveimg pour redimensionner les images. Cela nous a permis de réduire leur taille et donc de diminuer le temps de chargement du site. Ensuite, nous avons utilisé Compressjpeg pour compresser davantage les images, sans perdre en qualité visuelle.</p>
+          <br>
+          <p>Nous avons également utilisé PurifyCSS pour optimiser le code CSS. Cette étape nous a permis de supprimer les règles CSS inutilisées et d'optimiser la taille du fichier CSS, réduisant ainsi le temps de chargement du site.</p>
+          <br>
+          <p>Afin de mesurer l'impact environnemental de notre site, nous avons utilisé le Website Carbon Calculator. Cet outil nous a permis de déterminer l'empreinte carbone de notre site et d'identifier les domaines dans lesquels nous pouvions réduire notre impact environnemental.</p>
+          <br>
+          <p>Enfin, nous avons utilisé Pagespeed et GTmetrix pour mesurer les performances de notre site web. Ces outils nous ont fourni des informations détaillées sur le temps de chargement des pages, la taille des fichiers etc. Nous avons utilisé ces informations pour identifier les domaines à améliorer et pour apporter les modifications nécessaires.</p>
+          <br>
+          <p>Les résultats obtenus suite à nos démarches et l'utilisation d'outils spécialisés :
+            <a href="https://pagespeed.web.dev/analysis/http-mmi22g02-mmi-troyes-fr-wr204/9hvou7tiu3?form_factor=desktop">PageSpeed</a>
+            <a href="https://gtmetrix.com/reports/mmi22g02.mmi-troyes.fr/UUARtj2M/">GTmetrix</a>
+            <a href="https://www.websitecarbon.com/website/mmi22g02-mmi-troyes-fr-wr204/">Website Carbon Calculator</a>
+          </p>
           <hr>
-          <br>
           <h5 class="card-title">📚 Sources</h5>
           <ul>
-            <li><a href="" target="_blank">Lien vers ressource</a></li>
-            <li><a href="" target="_blank">Lien vers ressource</a></li>
-            <li><a href="" target="_blank">Lien vers ressource</a></li>
-            <li><a href="" target="_blank">Lien vers ressource</a></li>
+            <li><a href="https://www.iloveimg.com/resize-image#resize-options,pixels" target="_blank">Iloveimg - Redimensionnement d'images</a></li>
+            <li><a href="https://compressjpeg.com/fr/" target="_blank">Compressjpeg - Compression d'images</a></li>
+            <li><a href="https://purifycss.online/" target="_blank">PurifyCSS - Optimisateur de code css / js</a></li>
+            <li><a href="https://www.websitecarbon.com/" target="_blank">Website carbon calculator - Indicateur d'empreinte carbone</a></li>
+            <li><a href="https://pagespeed.web.dev/" target="_blank">Pagespeed - Indicateur de performance</a></li>
+            <li><a href="https://gtmetrix.com/" target="_blank">GTmetrix - Indicateur de performance </a></li>
           </ul>
         </div>
       </div>
     </div>
-  </div>
 
-    <!-- Footer -->
-    <footer class="mt-3 mb-0 py-3 text-center">
-      <p class="text-center my-0">Par <span style="font-weight: bold; text-transform: uppercase;">[ vos noms + groupe(s) ]</span> - BUT MMI 2023 - Culture du numérique</p>
+  <!-- Footer -->
+    <footer>
+      <p>Par <span style="font-weight: bold; text-transform: uppercase;">Maëve Basque & Alice Ghanimi - TD GH</span> - BUT MMI 2023 - Culture du numérique</p>
     </footer>
 
   </body>
